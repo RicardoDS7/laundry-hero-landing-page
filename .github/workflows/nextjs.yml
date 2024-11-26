@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-direcory: ./landing-page
+        working-directory: ./landing-page
     steps:
       - name: Checkout
         uses: actions/checkout@v4
