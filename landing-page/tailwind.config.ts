@@ -8,12 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'], // Set Poppins as the default sans font
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'ibm-blue': '#006699', // Define IBM blue
+        'nice-blue': '#4A90E2',
+        'charcoal': '#36454F',
       },
     },
   },
+  
   plugins: [],
 };
 export default config;
