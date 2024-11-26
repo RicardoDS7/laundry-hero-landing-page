@@ -21,7 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Confirm landing-page directory structure
+      - name: List files in workspace
+        run: ls -la
+
+      - name: List files in landing-page directory
         run: ls -la ./landing-page
 
       - name: Detect package manager
@@ -31,12 +34,10 @@ jobs:
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "./landing-page/package.json" ]; then
+          elif [ -f "./landing-page/package-lock.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
-            exit 0
           else
             echo "Unable to determine package manager"
             exit 1
@@ -51,11 +52,10 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v4
         with:
-          path: |
-            ./landing-page/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          path: ./landing-page/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('landing-page/package-lock.json', 'landing-page/yarn.lock') }}-${{ hashFiles('landing-page/**/*.ts', 'landing-page/**/*.tsx') }}
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+            ${{ runner.os }}-nextjs-${{ hashFiles('landing-page/package-lock.json', 'landing-page/yarn.lock') }}-
 
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.runner }} ${{ steps.detect-package-manager.outputs.command }}
