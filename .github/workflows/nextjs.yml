@@ -1,13 +1,12 @@
-
 name: Landing Page Deployment
 
 on:
   push:
-  branches:
-    - main  # Trigger only on pushes to the 'main' branch
+    branches:
+      - main  # Trigger only on pushes to the 'main' branch
   pull_request:
     branches:
-    - main  # Trigger only on pull requests targeting the 'main' branch
+      - main  # Trigger only on pull requests targeting the 'main' branch
   workflow_dispatch: # Allow manual triggering from the Actions tab
 
 jobs:
@@ -20,17 +19,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22.11.0  # Specify the Node.js version
+          node-version: 20  # Use a valid Node.js version
 
       - name: Install dependencies
-        run: npm install # Runs `npm install` in the project
+        run: npm install
         working-directory: ./landing-page
 
       - name: Build with Next.js
         run: npm run build
         working-directory: ./landing-page
 
+      - name: List files in landing-page directory
+        run: ls -la ./landing-page
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./landing-page/out
+          path: ./landing-page/out  # Change if output directory differs
