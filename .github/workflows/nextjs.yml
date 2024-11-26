@@ -29,6 +29,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: List files in landing-page directory
+        run: ls -la ./landing-page
+
       - name: Detect package manager
         id: detect-package-manager
         run: |
