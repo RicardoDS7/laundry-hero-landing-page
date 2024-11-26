@@ -8,7 +8,7 @@ const nextConfig = {
     unoptimized: true,  // Disable image optimization for static export
   },
   assetPrefix: isGithubPages ? '/laundry-hero-landing-page/' : '',  // Replace <repo-name> with your GitHub repository name
-  basePath: isGithubPages ? '/laundry-hero-landing-page>' : '',  // Set basePath for GitHub Pages
+  basePath: isGithubPages ? '/laundry-hero-landing-page' : '',  // Set basePath for GitHub Pages
 };
 
 export default nextConfig;
