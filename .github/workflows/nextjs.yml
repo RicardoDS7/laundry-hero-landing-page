@@ -9,6 +9,9 @@ on:
       - main  # Trigger only on pull requests targeting the 'main' branch
   workflow_dispatch: # Allow manual triggering from the Actions tab
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,7 +35,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./landing-page/out  # Change if output directory differs
+          path: ./landing-page/out  # Static export directory
 
   deploy:
       runs-on: ubuntu-latest
