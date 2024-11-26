@@ -30,6 +30,12 @@ jobs:
           node-version: "20"
           cache: "npm"
 
+      - name: List files in workspace
+        run: ls -la ${{ github.workspace }}
+
+      - name: List files in project directory
+        run: ls -la ./landing-page  # Adjust to your project directory
+
       - name: Install dependencies
         run: npm install
 
