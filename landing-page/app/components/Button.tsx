@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   asLink = false,
   href = '#',
 }) => {
-  const baseStyles = 'px-6 py-4 rounded-lg text-white text-base font-bold transition-all duration-300';
+  const baseStyles = 'px-6 py-2 rounded-full text-white text-base font-semibold transition-all duration-300';
   const variantStyles = {
     primary: 'bg-nice-blue hover:bg-blue-600',
     secondary: 'bg-gray-500 hover:bg-gray-600',
@@ -46,7 +46,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type={type}
       onClick={onClick}
-      className={`${combinedStyles} ${isDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+      className={`flex flex-row p-6 gap-2 ${combinedStyles} ${isDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
       disabled={isDisabled}
     >
       {label}

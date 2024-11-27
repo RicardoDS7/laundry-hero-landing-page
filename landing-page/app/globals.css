@@ -24,7 +24,15 @@
 }
 
 .logo {
-  @apply text-2xl;
+  @apply text-3xl;
+  @apply font-bold;
+  @apply italic;
+  @apply text-charcoal;
+}
+
+.hero-display {
+  @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+  @apply uppercase;
   @apply font-bold;
   @apply italic;
   @apply text-charcoal;

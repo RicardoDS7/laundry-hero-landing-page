@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
       </section>
 
       <section id="hero-section">
-
+        <Hero />
       </section>
 
       <section id="why-section">
