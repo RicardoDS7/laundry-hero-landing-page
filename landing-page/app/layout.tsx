@@ -21,9 +21,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body
-        className={`max-w-[1400px] mx-auto`}
-      >
+      <body>
         {children}
       </body>
     </html>

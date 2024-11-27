@@ -7,6 +7,7 @@ import logo from '../images/logo.png'
 
 const NavBar = () => {
   return (
+    <div className='max-w-[1400px] mx-auto'>
     <div className='flex w-full justify-between items-center py-4 px-4'>
         <div className='flex flex-row gap-2 items-center'>
             <Image src={logo} width={50} height={50} alt='logo'/>
@@ -17,6 +18,7 @@ const NavBar = () => {
             <Button label="Book Now" onClick={() => alert('Button clicked!')} />
         </div>
 
+    </div>
     </div>
 
   );
