@@ -21,9 +21,9 @@ const Button: React.FC<ButtonProps> = ({
   asLink = false,
   href = '#',
 }) => {
-  const baseStyles = 'px-6 py-2 rounded-full text-white text-base font-semibold transition-all duration-300';
+  const baseStyles = 'px-4 py-2 shadow rounded-full text-white font-semibold transition-all duration-300';
   const variantStyles = {
-    primary: 'bg-nice-blue hover:bg-blue-600',
+    primary: 'bg-nice-blue hover:bg-mcd-yellow',
     secondary: 'bg-gray-500 hover:bg-gray-600',
     danger: 'bg-red-500 hover:bg-red-600',
   };

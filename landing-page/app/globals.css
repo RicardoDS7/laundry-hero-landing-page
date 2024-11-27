@@ -6,7 +6,7 @@
 
 
 .logo {
-  @apply text-3xl;
+  @apply text-xl md:text-2xl lg:text-3xl;
   @apply font-bold;
   @apply italic;
   @apply text-charcoal;
@@ -22,5 +22,9 @@
 
 body {
   @apply text-charcoal;
-  @apply text-base;
+  @apply text-sm md:text-base;
+}
+
+.logo-image {
+  @apply scale-75 md:scale-90 lg:scale-100;
 }

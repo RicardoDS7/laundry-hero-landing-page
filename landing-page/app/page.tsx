@@ -10,7 +10,7 @@ export default function Home() {
         <NavBar />
       </section>
 
-      <section id="hero-section">
+      <section id="hero-section" className="bg-white-smoke">
         <Hero />
       </section>
 

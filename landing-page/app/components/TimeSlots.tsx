@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import ScheduleIcon from '../icons/schedule.png';
 
 const TimeSlots = () => {
   const [nextTimeStart, setNextTimeStart] = useState('');
@@ -22,6 +20,7 @@ const TimeSlots = () => {
         // Set nextHourStart to tomorrow at 07:00
         nextHourStart.setDate(nextHourStart.getDate() + 1); // Move to next day
         nextHourStart.setHours(7, 0, 0, 0); // Set to 07:00
+        nextHourEnd.setHours(8, 0, 0, 0); // Set to 07:00
       }
 
       // Calculate the difference in minutes (convert Date to timestamps with `.getTime()`)
@@ -49,18 +48,22 @@ const TimeSlots = () => {
 
   return (
     <div className="flex flex-col gap-2 items-start justify-start">
-      <span className="font-semibold">
-        Next slot available: <span className="text-nice-blue">{nextTimeStart} - {nextTimeEnd}</span>
-      </span>
+
+      <div className='flex flex-col'>
+        <span className="font-semibold">
+          Next slot available: <span className="text-nice-blue">{nextTimeStart} - {nextTimeEnd}</span>
+        </span>
+      </div>
+
       <button
-        className="flex flex-row px-6 py-2 gap-2 rounded-full bg-nice-blue hover:bg-blue-600 text-white text-base font-semibold transition-all duration-300"
+        className="flex flex-row px-6 py-2 gap-2 items-center rounded-full bg-nice-blue hover:shadow-md hover:bg-mcd-yellow text-white shadow font-semibold transition-all duration-300"
       >
         Schedule your pickup
-        <Image src={ScheduleIcon} width={25} height={25} alt="icon" />
       </button>
-      <Link className="underline hover:text-nice-blue" href="#">
-        See all timeslots
-      </Link>
+      <Link className="underline hover:text-nice-blue text-sm" href="#">
+          See all timeslots
+        </Link>
+      
     </div>
   );
 };
