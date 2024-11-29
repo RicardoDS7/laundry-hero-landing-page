@@ -21,7 +21,7 @@ export default function Home() {
 
       </section>
 
-      <section id="how-works-section" className="bg-white-smoke">
+      <section id="how-works-section" className="bg-nice-blue">
         <HowItWorks />
       </section>
 

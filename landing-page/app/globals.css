@@ -35,3 +35,9 @@ h2 {
   @apply font-bold;
   @apply text-charcoal;
 }
+
+h3 {
+  @apply text-lg md:text-xl lg:text-2xl xl:text-2xl;
+  @apply font-semibold;
+  @apply text-charcoal;
+}

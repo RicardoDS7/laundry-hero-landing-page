@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import ScrollToSectionButton from './ScrollToSectionButton';
+import { FaChevronRight } from "react-icons/fa";
 
 const TimeSlots = () => {
   const [nextTimeStart, setNextTimeStart] = useState('');
@@ -50,31 +50,27 @@ const TimeSlots = () => {
   return (
     <div className="flex flex-col gap-2 items-center justify-center md:items-start md:justify-start">
 
-      <div className='flex flex-col'>
-        <span className="font-semibold">
-          Next slot available: <span className="text-nice-blue">{nextTimeStart} - {nextTimeEnd}</span>
-        </span>
-      </div>
+      <Link className="text-sm" href="#">
+          <div className='flex flex-row gap-6 border-2 border-nice-blue rounded-full py-1 pl-6 pr-1 items-center'>
+            <div className='flex flex-col gap-1'>
+              <p className='font-bold'>Next available time</p>
+              <p className='text-xs text-nice-blue'>{nextTimeStart} - {nextTimeEnd}</p>
+            </div>
 
-      <div className='flex flex-row gap-2'>
-        <button
-          className="flex flex-row px-6 py-2 gap-2 items-center rounded-full
-          bg-nice-blue  border-nice-blue text-white shadow font-semibold
-          hover:shadow-md hover:bg-mcd-yellow border-2 hover:border-mcd-yellow hover:text-white transition-all duration-300"
-        >
-          Schedule pickup
-        </button>
+            <div className='border-l-2 h-10 border-nice-blue'></div>
 
-        <ScrollToSectionButton 
-          sectionID='prices-and-services-section'
-          buttonText='Prices & Services'>
-        </ScrollToSectionButton>
+            <div className='flex flex-col gap-1 border-nice-blue'>
+              <p className='font-bold'>Place</p>
+              <p className='text-xs text-nice-blue'>Add your address</p>
+            </div>
 
-      </div>
+            <div className='flex flex-col gap-2 rounded-full bg-nice-blue items-center justify-center p-4'>
+              {/* <FaArrowRight color='white'size={25}/> */}
+              <FaChevronRight color='white'size={25} />
+            </div>
 
-      <Link className="underline hover:text-nice-blue text-sm" href="#">
-          See all timeslots
-        </Link>
+          </div>
+      </Link>
       
     </div>
   );
