@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import ScrollToSectionButton from './ScrollToSectionButton';
 
 const TimeSlots = () => {
   const [nextTimeStart, setNextTimeStart] = useState('');
@@ -63,13 +64,12 @@ const TimeSlots = () => {
         >
           Schedule pickup
         </button>
-        <button
-          className="flex flex-row px-6 py-2 gap-2 items-center rounded-full
-          bg-white-smoke  border-nice-blue text-nice-blue shadow font-semibold
-          hover:shadow-md hover:bg-nice-blue border-2 hover:text-white transition-all duration-300"
-        >
-          View Prices
-        </button>
+
+        <ScrollToSectionButton 
+          sectionID='prices-and-services-section'
+          buttonText='Prices & Services'>
+        </ScrollToSectionButton>
+
       </div>
 
       <Link className="underline hover:text-nice-blue text-sm" href="#">

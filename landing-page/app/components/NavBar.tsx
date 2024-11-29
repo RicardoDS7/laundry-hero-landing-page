@@ -28,7 +28,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className={`fixed bg-white-smoke w-full z-30 ${isScrolled ? 'shadow-md' : ''}`}>
+    <div className={`fixed bg-white w-full z-30 ${isScrolled ? 'shadow-md' : ''}`}>
       <div className='max-w-[1400px] mx-auto'>
         <div className='flex w-full justify-between items-center py-4 px-2'>
             <div className='flex flex-row gap-1 items-center'>
