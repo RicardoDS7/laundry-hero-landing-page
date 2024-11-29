@@ -21,10 +21,10 @@ const Button: React.FC<ButtonProps> = ({
   asLink = false,
   href = '#',
 }) => {
-  const baseStyles = 'px-4 py-2 shadow rounded-full text-white font-semibold transition-all duration-300';
+  const baseStyles = 'px-4 py-2 border-2 shadow rounded-full text-white font-semibold transition-all duration-300';
   const variantStyles = {
-    primary: 'bg-nice-blue hover:bg-mcd-yellow',
-    secondary: 'bg-gray-500 hover:bg-gray-600',
+    primary: 'bg-nice-blue hover:bg-mcd-yellow border-nice-blue',
+    secondary: 'bg-white-smoke border-nice-blue hover:bg-nice-blue',
     danger: 'bg-red-500 hover:bg-red-600',
   };
 

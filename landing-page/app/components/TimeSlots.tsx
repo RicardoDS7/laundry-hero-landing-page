@@ -47,7 +47,7 @@ const TimeSlots = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-2 items-start justify-start">
+    <div className="flex flex-col gap-2 items-center justify-center md:items-start md:justify-start">
 
       <div className='flex flex-col'>
         <span className="font-semibold">
@@ -55,11 +55,23 @@ const TimeSlots = () => {
         </span>
       </div>
 
-      <button
-        className="flex flex-row px-6 py-2 gap-2 items-center rounded-full bg-nice-blue hover:shadow-md hover:bg-mcd-yellow text-white shadow font-semibold transition-all duration-300"
-      >
-        Schedule your pickup
-      </button>
+      <div className='flex flex-row gap-2'>
+        <button
+          className="flex flex-row px-6 py-2 gap-2 items-center rounded-full
+          bg-nice-blue  border-nice-blue text-white shadow font-semibold
+          hover:shadow-md hover:bg-mcd-yellow border-2 hover:border-mcd-yellow hover:text-white transition-all duration-300"
+        >
+          Schedule pickup
+        </button>
+        <button
+          className="flex flex-row px-6 py-2 gap-2 items-center rounded-full
+          bg-white-smoke  border-nice-blue text-nice-blue shadow font-semibold
+          hover:shadow-md hover:bg-nice-blue border-2 hover:text-white transition-all duration-300"
+        >
+          View Prices
+        </button>
+      </div>
+
       <Link className="underline hover:text-nice-blue text-sm" href="#">
           See all timeslots
         </Link>

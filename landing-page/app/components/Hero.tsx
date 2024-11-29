@@ -12,11 +12,11 @@ const Hero = () => {
     return (
       <div className='relative pt-14 max-w-[1400px] mx-auto'>
             
-          <div className='flex flex-col md:flex-row py-8'>
+          <div className='flex flex-col md:flex-row py-8 '>
             <div className='flex w-full md:w-7/12 flex-col gap-4 px-4'>
-              <div className='flex flex-col gap-4'>
-                <h1 className='hero-display'>Laundry done in 60 seconds?</h1>
-                <p className=''>Save time to do the things that matter most, and leave the laundry to us. It&apos;s never been easier to get your laundry done.</p>
+              <div className='flex flex-col gap-4 items-center justify-center md:items-start md:justify-start'>
+                <h1 className='hero-display text-center md:text-start'>Laundry done in 60 seconds?</h1>
+                <p className='text-center md:text-start'>Save time to do the things that matter most, and leave the laundry to us. It&apos;s never been easier to get your laundry done.</p>
               </div>
               < TimeSlots />
 
