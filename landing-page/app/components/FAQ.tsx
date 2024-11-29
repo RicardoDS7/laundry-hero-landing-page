@@ -1,8 +1,6 @@
 // components/FAQ.tsx
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
-import FAQImage from "../images/receiving-laundry.png";
-import Image from "next/image";
 
 interface FAQItemProps {
   question: string;
