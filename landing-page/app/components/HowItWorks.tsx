@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import { LAUNDRY_STEPS } from '../constants';
 import HowItWorksImage from '../images/happy-face.png';
 import Image from 'next/image';
 
