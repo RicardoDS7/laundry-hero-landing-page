@@ -53,15 +53,15 @@ const TimeSlots = () => {
       <Link className="text-sm" href="#">
           <div className='flex flex-row gap-4 border-2 border-nice-blue rounded-full py-1 pl-6 pr-1 items-center'>
             <div className='flex flex-col gap-1'>
-              <p className='font-bold text-xs'>Next Pickup time</p>
-              <p className='text-xs text-nice-blue'>{nextTimeStart} - {nextTimeEnd}</p>
+              <p className='font-bold text-xs md:text-sm'>Next Pickup time</p>
+              <p className='text-xs md:text-sm text-nice-blue'>{nextTimeStart} - {nextTimeEnd}</p>
             </div>
 
             <div className='border-l-2 h-10 border-nice-blue'></div>
 
             <div className='flex flex-col gap-1 border-nice-blue'>
-              <p className='font-bold text-xs'>Place</p>
-              <p className='text-xs text-nice-blue'>Add address</p>
+              <p className='font-bold text-xs md:text-sm'>Place</p>
+              <p className='text-xs md:text-sm text-nice-blue'>Add address</p>
             </div>
 
             <div className='flex flex-col gap-2 rounded-full bg-nice-blue items-center justify-center p-4'>

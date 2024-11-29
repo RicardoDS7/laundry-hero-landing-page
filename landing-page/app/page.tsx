@@ -34,7 +34,8 @@ export default function Home() {
       </section>
 
       <section id="faqs-section" className="py-6">
-        <div className="relative text-center max-w-[1400px] mx-auto">
+        <div className="relative text-center max-w-[1400px] mx-auto px-4">
+            
             <h2 className="text-charcoal mb-6">Frequently asked questions</h2>
           
             < FAQ 

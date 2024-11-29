@@ -42,7 +42,7 @@ const FAQ: React.FC<FAQProps> = ({ faqItems }) => {
   
 
   return (
-    <div className="flex flex-col justify-center items-center px-4">
+    <div className="flex flex-col justify-center items-center">
         
             {faqItems.map((faq, index) => (
             <FAQItem key={index} question={faq.question} answer={faq.answer} />
