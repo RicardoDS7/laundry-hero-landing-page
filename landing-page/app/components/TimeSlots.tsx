@@ -51,16 +51,16 @@ const TimeSlots = () => {
     <div className="flex flex-col gap-2 items-center justify-center md:items-start md:justify-start">
 
       <Link className="text-sm" href="#">
-          <div className='flex flex-row gap-6 border-2 border-nice-blue rounded-full py-1 pl-6 pr-1 items-center'>
+          <div className='flex flex-row gap-4 border-2 border-nice-blue rounded-full py-1 pl-6 pr-1 items-center'>
             <div className='flex flex-col gap-1'>
-              <p className='font-bold'>Next available time</p>
+              <p className='font-bold text-xs'>Next available time</p>
               <p className='text-xs text-nice-blue'>{nextTimeStart} - {nextTimeEnd}</p>
             </div>
 
             <div className='border-l-2 h-10 border-nice-blue'></div>
 
             <div className='flex flex-col gap-1 border-nice-blue'>
-              <p className='font-bold'>Place</p>
+              <p className='font-bold text-xs'>Place</p>
               <p className='text-xs text-nice-blue'>Add your address</p>
             </div>
 
