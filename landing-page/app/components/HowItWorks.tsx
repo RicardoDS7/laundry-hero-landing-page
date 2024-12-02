@@ -18,7 +18,7 @@ const HowItWorks = () => {
         <div className='flex flex-col lg:flex-row-reverse gap-8'>
         <ul className="flex list-none flex-wrap gap-6 justify-center w-full">
             <li className="flex flex-col w-full md:w-1/2 lg:w-1/5 bg-white rounded-3xl gap-2 justify-start items-start">
-                <div className='flex flex-row-reverse gap-4 pt-6 px-6 pb-3 items-start justify-between w-full'>
+                <div className='flex flex-row-reverse gap-4 pt-6 px-6 pb-3 items-center lg:items-start justify-between w-full'>
                     <div className="p-2 rounded-full bg-nice-blue">
                         <FaCalendarDay color="#f5f5f5" size={25} />
                     </div>
@@ -29,7 +29,7 @@ const HowItWorks = () => {
             </li>
 
             <li className="flex flex-col w-full md:w-1/2 lg:w-1/5 bg-white rounded-3xl gap-2 justify-start items-start">
-                <div className='flex flex-row-reverse gap-4 pt-6 px-6 pb-3 items-start justify-between w-full'>
+                <div className='flex flex-row-reverse gap-4 pt-6 px-6 pb-3 items-center lg:items-start justify-between w-full'>
                     <div className="p-2 rounded-full bg-nice-blue">
                         <FaTruck color="#f5f5f5" size={25} />
                     </div>
@@ -40,7 +40,7 @@ const HowItWorks = () => {
             </li>
 
             <li className="flex flex-col w-full md:w-1/2 lg:w-1/5 bg-white rounded-3xl gap-2 justify-start items-start">
-                <div className='flex flex-row-reverse gap-4 pt-6 px-6 pb-3 items-start justify-between w-full'>
+                <div className='flex flex-row-reverse gap-4 pt-6 px-6 pb-3 items-center lg:items-start justify-between w-full'>
                     <div className="p-2 rounded-full bg-nice-blue">
                         <MdLocalLaundryService color="#f5f5f5" size={25} />
                     </div>
@@ -51,7 +51,7 @@ const HowItWorks = () => {
             </li>
 
             <li className="flex flex-col w-full md:w-1/2 lg:w-1/5 bg-white rounded-3xl gap-2 justify-start items-start">
-                <div className='flex flex-row-reverse gap-4 pt-6 px-6 pb-3 items-start justify-between w-full'>
+                <div className='flex flex-row-reverse gap-4 pt-6 px-6 pb-3 items-center lg:items-start justify-between w-full'>
                     <div className="p-2 rounded-full bg-nice-blue">
                         <IoMdShirt color="#f5f5f5" size={25} />
                     </div>
