@@ -11,7 +11,7 @@ const HowItWorks = () => {
 
     {/* Content */}
     <div className="relative flex flex-col gap-8 w-full justify-center items-center py-10 px-4">
-        <h2 className="text-white font-bold text-3xl text-center">
+        <h2 className="text-white font-bold text-center">
           Take back your time. Leave the laundry to us.
         </h2>
         

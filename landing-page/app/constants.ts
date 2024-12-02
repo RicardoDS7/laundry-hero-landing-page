@@ -63,4 +63,42 @@ export const FAQs: FAQProps[] = [
     },
   ];
   
-  
+  export const TESTIMONIALS = [
+
+      {
+        id: 1,
+        testimonial: "LaundryHero made my life so much easier! The pickup and delivery service is incredibly convenient.",
+        name: "Sophia L.",
+        solutions: "Working Mom",
+        featured_image: "https://example.com/images/sophia.jpg", // Replace with actual image URL
+      },
+      {
+        id: 2,
+        testimonial: "I love how fresh and perfectly folded my clothes come back every time. Highly recommended!",
+        name: "James T.",
+        solutions: "Holidaymaker",
+        featured_image: "https://example.com/images/james.jpg", // Replace with actual image URL
+      },
+      {
+        id: 3,
+        testimonial: "Quick, professional, and hassle-free. I’ll never go back to doing laundry myself!",
+        name: "Amara K.",
+        solutions: "Business Owner",
+        featured_image: "https://example.com/images/amara.jpg", // Replace with actual image URL
+      },
+      {
+        id: 4,
+        testimonial: "I needed my suit dry-cleaned urgently, and LaundryHero delivered on time with exceptional quality!",
+        name: "Ethan M.",
+        solutions: "Student",
+        featured_image: "https://example.com/images/ethan.jpg", // Replace with actual image URL
+      },
+      {
+        id: 5,
+        testimonial: "Their subscription service is perfect for my busy schedule. My weekly laundry is now stress-free!",
+        name: "Olivia R.",
+        solutions: "Airbnb Host",
+        featured_image: "https://example.com/images/olivia.jpg", // Replace with actual image URL
+      }
+    
+  ];

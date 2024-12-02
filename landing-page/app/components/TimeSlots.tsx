@@ -17,7 +17,7 @@ const TimeSlots = () => {
       nextHourEnd.setHours(now.getHours() + 2, 0, 0, 0);
 
       // Check if nextHourStart is after 19:00
-      if (nextHourStart.getHours() >= 19) {
+      if (nextHourStart.getHours() >= 19 || nextHourStart.getHours() <= 6) {
         // Set nextHourStart to tomorrow at 07:00
         nextHourStart.setDate(nextHourStart.getDate() + 1); // Move to next day
         nextHourStart.setHours(7, 0, 0, 0); // Set to 07:00

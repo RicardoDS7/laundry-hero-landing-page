@@ -3,7 +3,9 @@ import FAQ from "./components/FAQ";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import NavBar from "./components/NavBar";
+import Carousel from "./components/TestimonialsCarousel";
 import { FAQs } from "./constants";
+import { TESTIMONIALS } from "./constants";
 
 export default function Home() {
   return (
@@ -29,8 +31,11 @@ export default function Home() {
 
       </section>
 
-      <section id="testimonials-section">
-
+      <section id="testimonials-section" className="bg-nice-blue">
+        <div className="block overflow-hidden py-6">
+          <Carousel 
+          testimonials={TESTIMONIALS}/>
+      </div>     
       </section>
 
       <section id="faqs-section" className="py-6">
