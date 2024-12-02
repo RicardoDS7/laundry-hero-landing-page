@@ -17,12 +17,12 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="why-section" className="bg-white-smoke">
-
-      </section>
-
       <section id="how-works-section" className="bg-nice-blue">
         <HowItWorks />
+      </section>
+
+      <section id="why-section" className="bg-white-smoke">
+
       </section>
 
       <section id="prices-and-services-section">

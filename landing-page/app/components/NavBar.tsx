@@ -33,7 +33,7 @@ const NavBar = () => {
         <div className='flex w-full justify-between items-center py-4 px-2'>
             <div className='flex flex-row gap-1 items-center'>
                 <Image className="logo-image" src={logo} width={36} height={36} alt='logo'/>
-                <h1 className='logo'>Laundry<span className='text-charcoal'>Hero</span></h1>
+                <h1 className='logo'>Laundry<span className='text-nice-blue'>Hero</span></h1>
             </div>
             <div className='flex gap-4 items-center'>
                 <span className='hidden md:block font-semibold text-charcoal'>Get Started</span>

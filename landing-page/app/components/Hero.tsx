@@ -5,8 +5,8 @@ import TimeSlots from './TimeSlots';
 import Image from 'next/image';
 import HeroImage from '../images/sad-face.png';
 import { FaTruck } from "react-icons/fa";
-import { FaClockRotateLeft } from "react-icons/fa6"
-import { FaTags } from "react-icons/fa6";
+import { FaClockRotateLeft, FaHandSparkles } from "react-icons/fa6"
+
 
 const Hero = () => {
     return (
@@ -19,14 +19,8 @@ const Hero = () => {
                 <p className='text-center md:text-start'>Save time to do the things that matter most, and leave the laundry to us. It&apos;s never been easier to get your laundry done.</p>
               </div>
               < TimeSlots />
-            </div>
 
-            <div className='w-full md:w-5/12 px-4 h-ful'>
-              <Image src={HeroImage} width={800} height={600} alt='hero-image' />
-            </div>
-        </div>
-
-        <div className='flex flex-wrap gap-4 w-full items-start justify-start py-6 px-4'>
+              <div className='flex flex-wrap gap-4 w-full items-center justify-center lg:justify-start lg:items-start py-6 px-4'>
                 <div className='flex flex-row gap-2 items-center'>
                   <div className='p-2 rounded-full bg-nice-blue'>
                     <FaClockRotateLeft color="#f5f5f5" size={25}/>
@@ -43,12 +37,21 @@ const Hero = () => {
 
                 <div className='flex flex-row gap-2 items-center'>
                   <div className='p-2 rounded-full bg-nice-blue'>
-                    <FaTags color="#f5f5f5" size={25}/>
+                    <FaHandSparkles color="#f5f5f5" size={25}/>
                   </div>
-                  <p className='font-semibold'>Affordable Pricing</p>
+                  <p className='font-semibold'>Professional Care</p>
                 </div>
                 
-              </div>
+            </div>
+
+            </div>
+
+            <div className='w-full md:w-5/12 px-4 h-ful'>
+              <Image src={HeroImage} width={800} height={600} alt='hero-image' />
+            </div>
+        </div>
+
+        
       </div>
   
     );
