@@ -80,7 +80,7 @@ const HowItWorks = () => {
                     <h3>3. Wait for our driver</h3>
                 </div>
                 <hr className="w-full border-t border-slate-300" />
-                <p className='pb-3 px-6 pt-3'>You'll receive a notification when our driver is nearby. They will collect your bags and take them to your local cleaning facility.</p>
+                <p className='pb-3 px-6 pt-3'>You&apos;ll receive a notification when our driver is nearby. They will collect your bags and take them to your local cleaning facility.</p>
 
                 <div className='flex flex-row gap-2 px-6 pb-3 items-center justify-start w-full'>
                     <div className="p-2 rounded-full bg-white">
@@ -97,10 +97,10 @@ const HowItWorks = () => {
                     <div className="p-2 rounded-full bg-nice-blue">
                         <IoMdShirt color="white" size={25} />
                     </div>
-                    <h3>4. We'll handle the rest</h3>
+                    <h3>4. We&apos;ll handle the rest</h3>
                 </div>
                 <hr className="w-full border-t border-slate-300" />
-                <p className='pb-2 px-6 pt-3'>Your local partner facility will clean your items with utmost care. Our driver will then deliver them back to you whenever you like. You're in full control of your delivery and can always reschedule if not at home.</p>
+                <p className='pb-2 px-6 pt-3'>Your local partner facility will clean your items with utmost care. Our driver will then deliver them back to you whenever you like. You&apos;re in full control of your delivery and can always reschedule if not at home.</p>
             
                 <div className='flex flex-row gap-2 px-6 items-center justify-start w-full'>
                     <div className="p-2 rounded-full bg-white">
