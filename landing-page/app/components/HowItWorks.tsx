@@ -26,9 +26,9 @@ const HowItWorks = () => {
                     <h3>1. Schedule your pickup</h3>
                 </div>
                 <hr className="w-full border-t border-slate-300" />
-                <p className='pb-6 px-6 pt-3'>Plan your day with ease. Choose a collection and delivery time at your convenience.</p>
+                <p className='pb-3 px-6 pt-3'>Plan your day with ease. Choose a collection and delivery time at your convenience.</p>
             
-                <div className='flex flex-row gap-2 px-6 pb-3 items-center justify-start w-full'>
+                <div className='flex flex-row gap-2 px-6 items-center justify-start w-full'>
                     <div className="p-2 rounded-full bg-white">
                         <FaCheck color="#4A90E2" size={25} />
                     </div>
@@ -53,9 +53,9 @@ const HowItWorks = () => {
                     <h3>2. Pack your laundry</h3>
                 </div>
                 <hr className="w-full border-t border-slate-300" />
-                <p className='pb-6 px-6 pt-3'>Pack your items in a disposable bag. Use one bag per service. Our driver will transfer them to reusable Laundryheap bags which you can keep for your next order.</p>
+                <p className='pb-3 px-6 pt-3'>Pack your items in a disposable bag. Use one bag per service. Our driver will transfer them to reusable Laundryheap bags which you can keep for your next order.</p>
             
-                <div className='flex flex-row gap-2 px-6 pb-3 items-center justify-start w-full'>
+                <div className='flex flex-row gap-2 px-6 items-center justify-start w-full'>
                     <div className="p-2 rounded-full bg-white">
                         <FaCheck color="#4A90E2" size={25} />
                     </div>
@@ -80,7 +80,7 @@ const HowItWorks = () => {
                     <h3>3. Wait for our driver</h3>
                 </div>
                 <hr className="w-full border-t border-slate-300" />
-                <p className='pb-6 px-6 pt-3'>You'll receive a notification when our driver is nearby. They will collect your bags and take them to your local cleaning facility.</p>
+                <p className='pb-3 px-6 pt-3'>You'll receive a notification when our driver is nearby. They will collect your bags and take them to your local cleaning facility.</p>
 
                 <div className='flex flex-row gap-2 px-6 pb-3 items-center justify-start w-full'>
                     <div className="p-2 rounded-full bg-white">
@@ -100,9 +100,9 @@ const HowItWorks = () => {
                     <h3>4. We'll handle the rest</h3>
                 </div>
                 <hr className="w-full border-t border-slate-300" />
-                <p className='pb-6 px-6 pt-3'>Your local partner facility will clean your items with utmost care. Our driver will then deliver them back to you whenever you like. You're in full control of your delivery and can always reschedule if not at home.</p>
+                <p className='pb-2 px-6 pt-3'>Your local partner facility will clean your items with utmost care. Our driver will then deliver them back to you whenever you like. You're in full control of your delivery and can always reschedule if not at home.</p>
             
-                <div className='flex flex-row gap-2 px-6 pb-3 items-center justify-start w-full'>
+                <div className='flex flex-row gap-2 px-6 items-center justify-start w-full'>
                     <div className="p-2 rounded-full bg-white">
                         <FaCheck color="#4A90E2" size={25} />
                     </div>
