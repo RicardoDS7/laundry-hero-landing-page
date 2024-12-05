@@ -20,6 +20,14 @@
   @apply text-charcoal;
 }
 
+.h2-display {
+  @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+  @apply uppercase;
+  @apply font-bold;
+  @apply italic;
+  @apply text-charcoal;
+}
+
 body {
   @apply text-charcoal;
   @apply text-sm md:text-base;
@@ -38,6 +46,6 @@ h2 {
 
 h3 {
   @apply text-lg md:text-lg lg:text-xl xl:text-xl;
-  @apply font-semibold;
+  @apply font-bold;
   @apply text-charcoal;
 }

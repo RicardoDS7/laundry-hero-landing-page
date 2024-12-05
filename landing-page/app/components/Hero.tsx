@@ -10,7 +10,7 @@ import { FaClockRotateLeft, FaHandSparkles } from "react-icons/fa6"
 
 const Hero = () => {
     return (
-      <div className='relative pt-14 max-w-[1400px] mx-auto'>
+      <div className='relative pt-16 max-w-[1400px] mx-auto'>
             
           <div className='flex flex-col md:flex-row py-6 items-center'>
             <div className='flex w-full md:w-7/12 flex-col gap-6 px-4'>
@@ -46,7 +46,7 @@ const Hero = () => {
 
             </div>
 
-            <div className='w-full md:w-5/12 px-4 h-ful'>
+            <div className='w-full md:w-5/12 px-4 h-full'>
               <Image src={HeroImage} width={800} height={600} alt='hero-image' />
             </div>
         </div>
