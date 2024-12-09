@@ -19,7 +19,7 @@ const ValueProposition = () => {
                     </div>
                     <div className="flex flex-col px-6 pb-6 pt-3 gap-3">
                         <h2 className="">Convenience</h2>
-                        <p>LaundryHero makes your life easier by letting you order and reschedule laundry services with just a few clicks. Whether you're at home or on the go, we fit into your schedule, not the other way around.</p>
+                        <p>LaundryHero makes your life easier by letting you order and reschedule laundry services with just a few clicks. Whether you&apos;re at home or on the go, we fit into your schedule, not the other way around.</p>
                     </div>
                 </div>
 
