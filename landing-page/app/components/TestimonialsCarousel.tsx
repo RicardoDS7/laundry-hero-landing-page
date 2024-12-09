@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Button from './Button';
 
 // Define the interface for a single testimonial
 interface Testimonals {
@@ -84,24 +85,14 @@ export default function Carousel({testimonials}: CarouselProps) {
         onTouchEnd={handleTouchEnd}>
         {/* Navigation Buttons */}
         <div className='flex flex-row items-center justify-start gap-6'>
-            <h2 className='text-charcoal'>How we saved the day</h2>
+            <h2 className='text-white'>How we saved the day</h2>
             <div className='hidden md:block'>
                 <div className='flex flex-row justify-end gap-4'>
                     <div className="relative left-0">
-                        <button
-                        onClick={prevSlide}
-                        className="bg-nice-blue hover:bg-white hover:text-nice-blue border-nice-blue hover:border-white px-4 py-2 border-2 shadow rounded-full text-white font-semibold transition-all duration-300"
-                        >
-                        Prev
-                        </button>
+                        <Button label="Prev" onClick={prevSlide} variant={'third'}/>
                     </div>
                     <div className="relative right-0">
-                        <button
-                        onClick={nextSlide}
-                        className="bg-nice-blue hover:bg-white hover:text-nice-blue border-nice-blue hover:border-white px-4 py-2 border-2 shadow rounded-full text-white font-semibold transition-all duration-300"
-                        >
-                        Next
-                        </button>
+                        <Button label="Next" onClick={nextSlide} variant={'third'}/>
                     </div>
                 </div>
             </div>

@@ -6,8 +6,9 @@ import NavBar from "./components/NavBar";
 import Carousel from "./components/TestimonialsCarousel";
 import { FAQs } from "./constants";
 import { TESTIMONIALS } from "./constants";
-import WhyUs from "./components/Why";
 import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
+import ValueProposition from "./components/ValueProposition";
 
 export default function Home() {
   return (
@@ -29,11 +30,11 @@ export default function Home() {
         <Pricing />
       </section>
 
-      <section id="why-section" className="bg-white-smoke">
-        <WhyUs />
+      <section id="why-section" className="bg-white">
+        <ValueProposition />
       </section>
 
-      <section id="testimonials-section" className="bg-jordy-blue">
+      <section id="testimonials-section" className="bg-nice-blue">
         <div className="block overflow-hidden py-14">
           <Carousel 
           testimonials={TESTIMONIALS}/>
@@ -51,8 +52,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="footer">
-
+      <section id="footer" className="bg-white">
+        <Footer />
       </section>
 
 

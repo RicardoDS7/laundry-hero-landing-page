@@ -36,8 +36,9 @@ const NavBar = () => {
                 <h1 className='logo'>Laundry<span className='text-nice-blue'>Hero</span></h1>
             </div>
             <div className='flex gap-4 items-center'>
-                <span className='hidden md:block font-semibold text-charcoal'>Get Started</span>
-                <Button label="Book Now" onClick={() => alert('Button clicked!')} />
+                {/* <span className='hidden md:block font-semibold text-charcoal'>Get Started</span> */}
+                <Button label="Book Now" asLink={true} href='./sign-up' />
+                <Button className='hidden md:block' label="Become a Partner" variant='secondary' asLink={true} href='./become-a-partner' />
             </div>
 
         </div>

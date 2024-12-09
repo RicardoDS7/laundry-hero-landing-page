@@ -15,7 +15,7 @@ const config: Config = {
         'ibm-blue': '#006699', // Define IBM blue
         'nice-blue': '#4A90E2',
         'charcoal': '#36454F',
-        'sunset-yellow': '#F9C784',
+        'sunset-yellow': '#ffc20a',
         'white-smoke': '#f5f5f5',
         'ruddy-blue': '#78ACEA',
         'jordy-blue': '#A5C8F1',

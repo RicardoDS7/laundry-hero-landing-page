@@ -50,7 +50,7 @@ const TimeSlots = () => {
   return (
     <div className="flex flex-col gap-2 items-center justify-center md:items-start md:justify-start">
 
-      <Link className="text-sm" href="#">
+      <Link className="text-sm" href="./sign-up">
           <div className='flex flex-row gap-4 border-2 border-nice-blue rounded-full py-1 pl-6 pr-1 items-center'>
             <div className='flex flex-col gap-1'>
               <p className='font-bold text-xs md:text-sm'>Next Pickup time</p>
