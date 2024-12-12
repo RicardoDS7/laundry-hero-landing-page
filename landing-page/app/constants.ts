@@ -102,3 +102,76 @@ export const FAQs: FAQProps[] = [
       }
     
   ];
+
+
+  export interface FooterProps {
+    title: string,
+    path: string,
+  };
+
+  export const FOOTER_A:FooterProps[] = [
+    {
+      title: "How it works",
+      path: "how-it-works-section"
+    },
+    {
+      title: "Pricing & Services",
+      path: "prices-and-services-section"
+    },
+    {
+      title: "Customer Reviews",
+      path: "testimonials-section"
+    },
+    {
+      title: "Why LaundryHero?",
+      path: "why-section"
+    }
+
+  ];
+
+  export const FOOTER_B:FooterProps[] = [
+    {
+      title: "Wash, Dry & Fold",
+      path: "sign-up"
+    },
+    {
+      title: "Wash, Dry & Iron",
+      path: "sign-up"
+    },
+    {
+      title: "Dry Cleaning",
+      path: "sign-up"
+    },
+    {
+      title: "Ironing",
+      path: "sign-up"
+    }
+
+  ];
+
+  export const FOOTER_C:FooterProps[] = [
+    {
+      title: "Become a Partner",
+      path: "become-a-partner"
+    },
+    {
+      title: "Terms & Conditions",
+      path: "terms-and-conditions"
+    },
+    {
+      title: "Privacy Policy",
+      path: "privacy-policy"
+    }
+  ];
+
+  export const FOOTER_D:FooterProps[] = [
+    {
+      title: "Instagram",
+      path: "how-it-works-section"
+    },
+    {
+      title: "Facebook",
+      path: "how-it-works-section"
+    }
+
+  ];

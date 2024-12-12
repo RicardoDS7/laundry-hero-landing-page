@@ -22,7 +22,7 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="how-works-section" className="bg-nice-blue">
+      <section id="how-it-works-section" className="bg-nice-blue">
         <HowItWorks />
       </section>
 
@@ -30,7 +30,7 @@ export default function Home() {
         <Pricing />
       </section>
 
-      <section id="why-section" className="bg-white">
+      <section id="why-section" className="bg-white py-14">
         <ValueProposition />
       </section>
 
