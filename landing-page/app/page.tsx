@@ -26,10 +26,6 @@ export default function Home() {
         <HowItWorks />
       </section>
 
-      <section id="prices-and-services-section" className="py-14">
-        <Pricing />
-      </section>
-
       <section id="why-section" className="bg-white py-14">
         <ValueProposition />
       </section>
@@ -41,6 +37,15 @@ export default function Home() {
       </div>     
       </section>
 
+      <section id="service-areas">
+        
+      </section> 
+
+      <section id="prices-and-services-section" className="py-14">
+        <Pricing />
+      </section>
+           
+
       <section id="faqs-section" className="py-14">
         <div className="relative text-center max-w-[1400px] mx-auto px-4">
             
@@ -51,6 +56,10 @@ export default function Home() {
 
         </div>
       </section>
+
+      <section id="final-CTA">
+        
+      </section> 
 
       <section id="footer" className="bg-white">
         <Footer />
