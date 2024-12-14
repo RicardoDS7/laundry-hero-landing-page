@@ -3,6 +3,7 @@
 const isGithubPages = process.env.GITHUB_PAGES === 'true';
 
 const nextConfig = {
+  output: exports,
   images: {
     unoptimized: true,  // Disable image optimization for static export
   },
