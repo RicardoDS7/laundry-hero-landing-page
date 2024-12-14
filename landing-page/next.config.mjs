@@ -3,7 +3,6 @@
 const isGithubPages = process.env.GITHUB_PAGES === 'true';
 
 const nextConfig = {
-  output: 'export',  // Export the app as a static site
   images: {
     unoptimized: true,  // Disable image optimization for static export
   },
