@@ -87,7 +87,7 @@ const SignUpForm: React.FC = () => {
         {/* reCAPTCHA */}
         <div className="mb-4">
           <ReCAPTCHA
-            sitekey="6LeAhpsqAAAAAKaYgnj4YdzWyAQwRiWjX-WozirH" // Replace with your actual site key
+            sitekey="6LfYh5sqAAAAALoY6Gd9ALoMrhLBWgKn5AgFY4Nn" // Replace with your actual site key
             onChange={onCaptchaChange}
           />
         </div>
