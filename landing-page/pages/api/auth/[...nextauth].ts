@@ -1,6 +1,8 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
+console.log("NextAuth API Route File Loaded");
+
 export const authOptions = {
   providers: [
     GoogleProvider({
@@ -11,4 +13,7 @@ export const authOptions = {
   secret: process.env.NEXTAUTH_SECRET, // Ensure this is set
 };
 
+console.log("NextAuth API Route Loaded");
+
 export default NextAuth(authOptions);
+
