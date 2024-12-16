@@ -37,7 +37,7 @@ const NavBar = () => {
             </div>
             <div className='flex gap-4 items-center'>
                 {/* <span className='hidden md:block font-semibold text-charcoal'>Get Started</span> */}
-                <Button label="Book Now" asLink={true} href='./login' />
+                <Button label="Book Now" asLink={true} href='./account/login' />
                 <Button className='hidden md:block' label="Become a Partner" variant='secondary' asLink={true} href='./become-a-partner' />
             </div>
 
