@@ -4,6 +4,7 @@ const isGithubPages = process.env.GITHUB_PAGES === 'true';
 
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
   images: {
     unoptimized: true,  // Disable image optimization for static export
   },
